@@ -304,16 +304,82 @@
 				  <h6 class="m-0 font-weight-bold text-primary">specific Management</h6>
 				</div>
 				<div class="c_header_right">
-					<!-- <a href="#" class="admin_btn" data-toggle="modal" data-target="#specific_modal"><i class="far fa-image"></i>specific</a> -->
+					<a href="#" class="admin_btn" data-toggle="modal" data-target="#s_category_modal"><i class="fas fa-tag"></i>Add Category</a>
+					<a href="#" class="admin_btn" data-toggle="modal" data-target="#specific_modal"><i class="fas fa-plus"></i>Add specification</a>
 				</div>
             </div>
 			<!-- card header End -->
 			<!-- card body start -->
             <div class="card-body">
-              <div class="banner_wrapper text-center">
-				<h1>We are Working on this page</h1>
+				<div class="table-responsive">
+                <table class="table dataTable" width="100%" cellspacing="0">
+                  <thead>
+                    <tr>
+                      <th>id</th>
+                      <th>Category Name</th>
+                      <th>Specification</th>
+                      <th>Action</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>Air Conditioner</td>
+					  <td>Model Code</td>
+					   <td class="action_btn">
+					    <a href="edit_specification.html" class="a_icons"><i class="fas fa-edit"></i></a>
+						<a href="#" class="a_icons"><i class="fas fa-trash"></i></a>
+					   </td>
+                    </tr>
+					<tr>
+                      <td>2</td>
+                      <td>Air Conditioner</td>
+					  <td>Energy Efficiency</td>
+					   <td class="action_btn">
+					    <a href="edit_specification.html" class="a_icons"><i class="fas fa-edit"></i></a>
+						<a href="#" class="a_icons"><i class="fas fa-trash"></i></a>
+					   </td>
+                    </tr>
+					<tr>
+                      <td>3</td>
+                      <td>Air Conditioner</td>
+					  <td>Capacity</td>
+					   <td class="action_btn">
+					    <a href="edit_specification.html" class="a_icons"><i class="fas fa-edit"></i></a>
+						<a href="#" class="a_icons"><i class="fas fa-trash"></i></a>
+					   </td>
+                    </tr>
+					<tr>
+                      <td>4</td>
+                      <td>Refrigerator</td>
+					  <td>Model Code</td>
+					   <td class="action_btn">
+					    <a href="edit_specification.html" class="a_icons"><i class="fas fa-edit"></i></a>
+						<a href="#" class="a_icons"><i class="fas fa-trash"></i></a>
+					   </td>
+                    </tr>
+					<tr>
+                      <td>5</td>
+                      <td>Refrigerator</td>
+					  <td>Energy Efficiency</td>
+					   <td class="action_btn">
+					    <a href="edit_specification.html" class="a_icons"><i class="fas fa-edit"></i></a>
+						<a href="#" class="a_icons"><i class="fas fa-trash"></i></a>
+					   </td>
+                    </tr>
+					<tr>
+                      <td>6</td>
+                      <td>Refrigerator</td>
+					  <td>Capacity</td>
+					   <td class="action_btn">
+					    <a href="edit_specification.html" class="a_icons"><i class="fas fa-edit"></i></a>
+						<a href="#" class="a_icons"><i class="fas fa-trash"></i></a>
+					   </td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
-            </div>
+			</div>
 			<!-- card body End -->
           </div>
         </div>
@@ -355,27 +421,23 @@
       </div>
     </div>
   </div>
-<!-- upload banner modal -->
-<div class="modal fade" id="specific_modal" tabindex="-1" role="dialog" aria-hidden="true">
+  <!-- Logout Modal-->
+<!-- Category modal -->
+<div class="modal fade" id="s_category_modal" tabindex="-1" role="dialog" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title">Upload Banner Image</h5>
+        <h5 class="modal-title">Add Your Category</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
 	<div class="modal-body">
-		<div class="admin_forms banner_form text-center">
+		<div class="admin_forms specific_form">
 			<div class="form_group">
+				<label class="form_label">Category</label>
 				<div class="input_group">
-					<div class="file_upload_div">
-						<label class="file_upload_button">
-							<input type="file" name="banner_files">
-							<i class="far fa-image"></i><span class="text">Add Banner</span>
-						</label>
-						<span class="filepath"></span>
-					</div>
+					<input class="form-control" type="text" name="Category" placeholder="Enter Category">
 				</div>
 			</div>
 			<div class="form_group btn_group">
@@ -387,7 +449,49 @@
     </div>
   </div>
 </div>
-<!-- upload banner modal -->
+<!-- Specification modal -->
+<!-- Specification modal -->
+<div class="modal fade" id="specific_modal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Add Your Specification</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+	<div class="modal-body">
+		<div class="admin_forms specific_form">
+			<div class="form_group">
+				<label class="form_label">Category</label>
+				<div class="input_group">
+					<select class="form-control">
+						<option value="">Select Category</option>
+						<option value="">Air Conditioner</option>
+						<option value="">Refrigerator</option>
+						<option value="">Washing machine</option>
+						<option value="">Microwave</option>
+						<option value="">Deep Freezer</option>
+					</select>
+				</div>
+			</div>
+			<div class="form_group specific_append_dv">
+				<label class="form_label">Specification</label>
+				<div class="input_group specific_row">
+					<input class="form-control" type="text" name="specific" placeholder="Enter Specification">
+					<span class="add_specific_btn"><i class="fas fa-plus"></i></span>
+				</div>
+			</div>
+			<div class="form_group btn_group">
+				<button type="button" class="admin_btn">Submit</button>
+				<button type="button" class="admin_btn" data-dismiss="modal">Cancel</button>
+			</div>
+		</div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Specification modal -->
   <!-- Bootstrap core JavaScript-->
   <script src="assets/vendor/jquery/jquery.min.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -401,9 +505,20 @@
   <!-- Page level custom scripts -->
   <script src="assets/js/demo/datatables-demo.js"></script>
   <script>
-	$('.file_upload_button input[type="file"]').change(function(e){
-		var fileName = e.target.files[0].name;
-		$(this).parents(".file_upload_button").next(".filepath").text(fileName);
+    //append specific
+	var s = 1;
+	$('.add_specific_btn').on('click', function(){
+	s++;
+	var html = '<div class="input_group specific_row" id="s_row'+s+'">\
+					<input class="form-control" type="text" name="specific" placeholder="New Specification">\
+					<span class="spcfc_remove" id="remove_btn'+s+'"><i class="fas fa-minus"></i></span>\
+				</div>';
+	$('.specific_append_dv').append(html);
+	});
+	//remove field
+	$(document).on('click', '.spcfc_remove', function(){
+		var remove_prnt = $(this).parents(".specific_row");
+		$(remove_prnt).remove();
 	});
   </script>
 </body>

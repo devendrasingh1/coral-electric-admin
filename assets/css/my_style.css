@@ -255,7 +255,7 @@ a:focus, .form-control:focus, select:focus, button:focus{
 }
 .banner_form .file_upload_div {
     border: 1px solid #ccc;
-    padding: 2px;
+    text-align: left;
 }
 /*======= form css End ======*/
 /*======= Table css start ======*/
@@ -460,6 +460,11 @@ a:focus, .form-control:focus, select:focus, button:focus{
 }
 /*======= category css End ======*/
 /*======= Banner css End ======*/
+.image_size_div {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
 .banner_wrapper {
     display: inline-block;
     width: 100%;
@@ -536,3 +541,44 @@ a:focus, .form-control:focus, select:focus, button:focus{
     color: #fff;
 }
 /*======= Banner css End ======*/
+/*======= specification css start ======*/
+#specific_modal .modal-body {
+    max-height: 300px;
+    overflow-y: auto;
+}
+.specific_row {
+    position: relative;
+    padding-right: 26px;
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 5px;
+}
+.specific_row .spcfc_remove {
+    position: absolute;
+    right: 0;
+    top: 8px;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    font-size: 13px;
+    border-radius: 50%;
+    cursor: pointer;
+    background: #ff1616;
+    color: #fff;
+}
+.specific_row .add_specific_btn {
+    position: absolute;
+    right: 0;
+    top: 8px;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    font-size: 13px;
+    border-radius: 50%;
+    cursor: pointer;
+    background: #06b77b;
+    color: #fff;
+}
+/*======= specification css End ======*/

@@ -298,68 +298,35 @@
           <!-- Page Heading -->
           <!-- DataTales Example -->
           <div class="card shadow mb-4">
-			<!-- card header start -->
-            <div class="card-header py-3">
-				<div class="c_header_title">
-				  <h6 class="m-0 font-weight-bold text-primary">Three Static Banners</h6>
-				</div>
-				<div class="c_header_right">
-					
-				</div>
-            </div>
-			<!-- card header End -->
 			<!-- card body start -->
             <div class="card-body">
-			  <div class="image_size_div">
-			    <span class="info_txt">(Banner Size should be 650x400px)</span>
-			   </div>
-              <div class="banner_wrapper">
-				<!-- col start -->
-                <div class="banner_cols">
-					<div class="banner_item">
-						<div class="banner_img">
-						  <img src="assets/img/banner/banner_1.jpg" />
-						  <div class="bnr_overlay">
-							<div class="overlay_buttons">
-								<a class="icons" href="#"><i class="fas fa-edit"></i></a>
-								<a class="icons" href="#"><i class="fas fa-trash"></i></a>
+              <div class="admin_forms product_form">
+				<h5 class="form_text mb-3">Edit Specification & Category</h5>
+				<form>
+					<div class="row">
+						<div class="col-md-6 col-12">
+						  <div class="form_group">
+							<label class="form_label">Category</label>
+							<div class="input_group">
+								<input type="text" value="Air Conditioner" class="form-control" />
+							</div>
+						  </div>
+						</div>
+						<div class="col-md-6 col-12">
+						  <div class="form_group">
+							<label class="form_label">Specification</label>
+							<div class="input_group">
+								<input type="text" value="Model Code" class="form-control" />
 							</div>
 						  </div>
 						</div>
 					</div>
-				</div>
-				<!-- col End -->
-				<!-- col start -->
-                <div class="banner_cols">
-					<div class="banner_item">
-						<div class="banner_img">
-						  <img src="assets/img/banner/banner_2.jpg" />
-						  <div class="bnr_overlay">
-							<div class="overlay_buttons">
-								<a class="icons" href="#"><i class="fas fa-edit"></i></a>
-								<a class="icons" href="#"><i class="fas fa-trash"></i></a>
-							</div>
-						  </div>
-						</div>
+					<div class="form_group btn_group">
+						<input type="submit" value="Save" class="admin_btn">
+						<a href="specific-management.html" class="admin_btn">Cancel</a>
 					</div>
-				</div>
-				<!-- col End -->
-				<!-- col start -->
-                <div class="banner_cols">
-					<div class="banner_item">
-						<div class="banner_img">
-						  <img src="assets/img/banner/banner_3.jpg" />
-						  <div class="bnr_overlay">
-							<div class="overlay_buttons">
-								<a class="icons" href="#"><i class="fas fa-edit"></i></a>
-								<a class="icons" href="#"><i class="fas fa-trash"></i></a>
-							</div>
-						  </div>
-						</div>
-					</div>
-				</div>
-				<!-- col End -->
-              </div>
+				</form>
+			  </div>
             </div>
 			<!-- card body End -->
           </div>
@@ -414,11 +381,5 @@
   <script src="assets/vendor/datatables/dataTables.bootstrap4.min.js"></script>
   <!-- Page level custom scripts -->
   <script src="assets/js/demo/datatables-demo.js"></script>
-  <script>
-	$('.file_upload_button input[type="file"]').change(function(e){
-		var fileName = e.target.files[0].name;
-		$(this).parents(".file_upload_button").next(".filepath").text(fileName);
-	});
-  </script>
 </body>
 </html>
